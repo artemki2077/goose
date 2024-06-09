@@ -8,3 +8,10 @@ final getIt = GetIt.instance;
 Future<void> setup() async{
   getIt.registerLazySingleton<DataBaseRepo>(() => DataBaseRepo());
 }
+
+
+
+
+
+
+

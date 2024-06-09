@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   TextEditingController textEditingController = TextEditingController();
 
   Future<List<Product>> loadProduct() async{
-    http.Response response = await http.post(Uri.http('127.0.0.1:8000', '/data/search', {
+    http.Response response = await http.post(Uri.http('62.113.114.207:8001', '/data/search', {
       "search": textEditingController.text,
     }));
     List data = await jsonDecode(utf8.decode(response.bodyBytes)) as List;

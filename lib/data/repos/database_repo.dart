@@ -11,9 +11,7 @@ class DataBaseRepo {
   }
 
   Future<void> add(Product product) async {
-    print("add");
     await box.add(product.toJson());
-    print(box.length);
   }
 
   Future<void> delete(Product product)async{
